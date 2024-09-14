@@ -3,10 +3,10 @@ body{
 }
 
 .btn{
-    height:100px;
-    width:150px;
-    border:3px solid black;
-    border-radius:9%;
+    height:200px;
+    width:200px;
+    border:10px solid black;
+    border-radius:20%;
     margin:1.5rem;
 }
 
@@ -26,4 +26,11 @@ body{
 }
 .green{
     background-color:rgb(50, 72, 199);
+}
+
+.flash{
+    background-color: white;
+}
+.userflash{
+    background-color: blue;
 }
