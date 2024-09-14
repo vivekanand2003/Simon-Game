@@ -1,0 +1,29 @@
+body{
+    text-align: center;
+}
+
+.btn{
+    height:100px;
+    width:150px;
+    border:3px solid black;
+    border-radius:9%;
+    margin:1.5rem;
+}
+
+.btn_level1{
+    display:flex;
+    justify-content:center;
+    
+}
+.pink{
+    background-color:rgb(221, 157, 168);
+}
+.purple{
+    background-color:rgb(216, 138, 216);
+}
+.yellow{
+    background-color: rgb(247, 220, 180);
+}
+.green{
+    background-color:rgb(50, 72, 199);
+}
