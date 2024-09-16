@@ -50,7 +50,12 @@ function levelUp(){
         }
     }
     else{
-        h3.innerText=`Game Over! Press any key to start.`;
+        h3.innerHTML=`Game Over! Your Score was <b>${level}</b> <br> Press any key to start.`;
+        document.querySelector("body").style.backgroundColor="red";
+        setTimeout(function(){
+            document.querySelector("body").style.backgroundColor="white";
+        },150);
+        reset();
     }
  }
 
@@ -68,4 +73,11 @@ function btnPress(){
 let allBtns=document.querySelectorAll(".btn");
 for(btn of allBtns){
 btn.addEventListener("click",btnPress);
+}
+
+function reset(){
+    started=false;
+    gameSeq=[];
+    userSeq=[];
+    level=0;
 }
