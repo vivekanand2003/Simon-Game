@@ -1,5 +1,5 @@
-let gemeseq=[];
-let userseq=[];
+let gameSeq=[];
+let userSeq=[];
 let btns=["yellow","pink","purple","green"];
 
 let level=0;
@@ -32,22 +32,37 @@ function userFlash(btn){
 }
 
 function levelUp(){
+    userSeq=[];
     level ++;
     h3.innerText=`Level ${level}`;
     let randIdx=Math.floor(Math.random()*3);
     let randColor=btns[randIdx];
     let randBtn=document.querySelector(`.${randColor}`);
-    console.log(randIdx);
-    console.log(randColor);
-    console.log(randBtn);
-
+    gameSeq.push(randColor);
+    console.log(gameSeq);
     GameFlash(randBtn);
 }
+ function checkAns(idx){
+    if(userSeq[idx]===gameSeq[idx]){
+        if(userSeq.length==gameSeq.length){
+        setTimeout(levelUp,1000);
+
+        }
+    }
+    else{
+        h3.innerText=`Game Over! Press any key to start.`;
+    }
+ }
 
 function btnPress(){
     console.log(this);
     let btn=this;
     userFlash(btn);
+
+    userColor=btn.getAttribute("id");
+    userSeq.push(userColor);
+
+    checkAns(userSeq.length-1);
 }
 
 let allBtns=document.querySelectorAll(".btn");
