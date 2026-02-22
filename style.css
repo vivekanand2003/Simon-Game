@@ -16,21 +16,21 @@ body{
     
 }
 .pink{
-    background-color:rgb(221, 157, 168);
+    background-color:rgb(163, 17, 41);
 }
 .purple{
-    background-color:rgb(216, 138, 216);
+    background-color:rgb(168, 1, 168);
 }
 .yellow{
-    background-color: rgb(247, 220, 180);
+    background-color: rgb(252, 155, 9);
 }
 .green{
-    background-color:rgb(50, 72, 199);
+    background-color:rgb(8, 43, 241);
 }
 
 .flash{
     background-color: white;
 }
 .userflash{
-    background-color: blue;
+    background-color: rgb(94, 91, 91);
 }
